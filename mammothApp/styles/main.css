@@ -1,0 +1,168 @@
+/*
+    Colors Used:
+    Blue:4f86c6
+    Coral: fe6847
+
+*/
+
+header, nav, section, aside, article, footer, video, audio, main {
+    display: block;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+section, footer {
+    margin:5px;
+    border-top: solid 1px #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin:5px;
+    font-family: 'Merienda One', cursive;
+}
+h2, h3 {
+    text-align: center;
+}
+
+p, ul li {
+    margin-bottom: 15px;
+}
+
+ul li {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #4f86c6;
+}
+
+a:visited {
+    color: #fe6847;
+}
+
+span {
+    display: inline-block;
+    background-color: #fe6847;
+    color: #fff;
+    padding: 0 5px;
+    font: 16px 'Merienda One', cursive;
+}
+
+/*Start Menu Styles*/
+#mainIcon {
+    background-color: #4f86c6;
+}
+
+#mainIcon img {
+    margin: 15px;
+}
+/*Mobile left slider styles are in the jquery.sidr.light.css file*/
+#largeScreen {
+    display: none;
+}
+/*end menu styles*/
+
+.center {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width:360px){
+   body{
+        margin: 0 auto;
+        background-image: url(../images/sayagata-400px.png);/* Background pattern from subtlepatterns.com */
+        background-repeat: repeat;
+    }
+    #container{
+        background-color: #fff;
+    }
+    #colOf4{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #col1, #col2, #col3, #col4{
+        float: left;
+        width: 40%;
+        padding: 10px;
+    }
+      article {
+        clear: both;
+    }
+}
+@media screen and (min-width:900px) { 
+    body{
+        max-width: 960px;
+        margin: 0 auto;
+        background-image: url(../images/sayagata-400px.png);/* Background pattern from subtlepatterns.com */
+        background-repeat: repeat;
+    }
+    #container{
+        background-color: #fff;
+        position: relative;
+    }
+    section, footer{
+        margin: 0 20px;
+    }
+    footer{
+        margin-bottom: 100px;
+    }
+    #colOf4{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #col1, #col2, #col3, #col4{
+        float: left;
+        width: 20%;
+        padding: 20px;
+    }
+    article {
+        clear: both;
+    }
+    #sidr{
+        display: none;
+    }
+    #mainIcon{
+        display: none;
+    }
+    #largeScreen {
+        display: inline-block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: #f4f5f6;
+        width: 100%;
+        border-top: 1px solid #ccc;
+    }
+    #largeScreen ul {
+        text-align: center;
+    }
+    #largeScreen ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 15px;
+        margin: 5px;
+    }
+    #largeScreen ul li a{
+        color: #4f86c6; 
+        font-weight: bold;
+        border-bottom: 0;
+        -webkit-transition-property: border-bottom;
+        -webkit-transition-duration: .5s;
+        transition-property: border-bottom;
+        transition-duration: .5s;
+    }
+    #largeScreen ul li a:hover{
+        border-bottom: 5px solid #4f86c6;
+    }
+}
